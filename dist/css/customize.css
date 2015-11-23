@@ -1,0 +1,51 @@
+td.details-control {
+    background: url('../../dist/img/mini-plus.png') no-repeat center 10px;
+    cursor: pointer;
+    -webkit-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    transition: 0.2s all ease-out;
+}
+tr.shown td.details-control {
+    background: url('../../dist/img/mini-minus.png') no-repeat center 10px;
+}
+/* Show border table when expand */
+tr.shown td.details-control {
+	border-left:3px solid green;
+}
+tr.shown + tr  {
+	border-left:3px solid green;
+}
+
+.invisibility{
+	visibility: hidden;
+}
+
+table.child-row tbody tr th{
+	border-bottom: 1px solid #eeeeee;
+}
+table.child-row{
+	padding-left:3.5%;
+	margin:0px;
+}
+table.child-row tbody tr {
+	background-color:transparent;
+}
+.collapse-mark{
+	color:#fff;
+}
+/* Footer Table with Control Tool */
+.box-footer-custom div{
+	display: inline-block;
+	margin-right: 10px;
+}
+.box-footer-custom #table_paginate {
+	margin-right: 0px;
+}
+.box-footer-custom #table_paginate ul{
+	margin: auto;
+}
+.box-footer-custom #table_length{
+	float: right;
+}
+.box-footer-custom #table_length label{
+	margin-bottom: 0px;

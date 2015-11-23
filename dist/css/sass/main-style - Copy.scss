@@ -1,0 +1,148 @@
+td.details-control {
+    background: url('../../dist/img/mini-plus.png') no-repeat center 10px;
+    cursor: pointer;
+    -webkit-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    transition: 0.2s all ease-out;
+}
+tr.shown td.details-control {
+    background: url('../../dist/img/mini-minus.png') no-repeat center 10px;
+}
+tr.shown td.details-control {
+	border-left:3px solid green;
+}
+tr.shown + tr  {
+	border-left:3px solid green;
+}
+.invisibility{
+	visibility: hidden;
+}
+/* Color Gradient */
+$m-gray-text: #616161;
+%light-gradient{
+background: linear-gradient(0deg, #f5f5f5, #fafafa);
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+}
+%lighter-gradient{
+background: linear-gradient(0deg, #f9f9f9, #fefefe);
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+}
+/**************************/
+table.child-row {
+	padding-left:3.5%;
+	margin:0px;
+	tbody {
+		tr{
+			background-color:transparent;
+			th{
+				border-bottom: 1px solid #eeeeee;
+			}
+		}
+	}
+}
+.collapse-mark{
+	color:#fff;
+}
+.box-footer-custom{
+	div{
+		display: inline-block;
+		margin-right: 10px;
+	}
+	#table_paginate{
+		margin-right: 0px;
+		ul{
+				margin: auto;
+		}
+	}
+	#table_length{
+		float: right;
+		label{
+			margin-bottom: 0px;
+		}
+	}
+}
+/* Filter Button DataTable */
+.box-header{
+	.filter-bar{
+		&:after{
+			position: absolute;
+			top:15px;
+			left:15px;
+		}
+		.form-group{
+			display:inline-block;
+			margin-bottom: 0px;
+			vertical-align: middle;
+			margin-right: 8px;
+		}
+		.filter-btn{
+			border-radius: 3px;
+			border:1px solid #e0e0e0;
+			@extend %light-gradient;
+			padding:6px 8px;
+			line-height: 1.42857143;
+			color: $m-gray-text;
+			cursor:pointer;
+			span{
+				margin-right:5px;
+			}
+			&.pull-right{
+				margin-left:10px;
+				margin-right: 0px;
+			}
+			&:hover{
+				@extend %lighter-gradient;
+				-webkit-transition: 0.2s all ease-out;
+				-o-transition: 0.2s all ease-out;
+				transition: 0.2s all ease-out;
+			}
+		}
+		.selectpicker{
+			width:60px;
+		}
+		#s-keyword{
+			margin-right: 8px;
+		}
+		#type{
+			width:70px;
+		}
+	}
+}
